@@ -15,3 +15,13 @@
         msg: "{{ URL1 }}"
       vars:
         URL1: Facebook.com
+
+- name: Register variable example
+  hosts: localhost
+  tasks:
+      - name: get Uptime of server
+        ansible.builtin.shell: uptime
+        register: OUT
+      - name: Print OUT var
+        ansible.builtin.debug:
+          msg: "{{ OUT }}"
