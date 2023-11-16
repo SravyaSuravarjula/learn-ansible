@@ -14,4 +14,4 @@
       ansible.builtin.debug:
         msg: "{{ URL }}
       vars:
-        URL1: Facebook.com
+        URL1: sample.com
