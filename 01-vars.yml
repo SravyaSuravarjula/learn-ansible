@@ -1,5 +1,5 @@
 - name: Demo on variables
-  hosts: Localhost
+  hosts: localhost
   vars:
     URL: Facebook.com
   tasks:
@@ -8,7 +8,7 @@
         msg: "{{ URL }}"
 
 - name: Demon on task Variables
-  hosts: Localhost
+  hosts: localhost
   tasks:
     - name: Print URl1 variable
       ansible.builtin.debug:
